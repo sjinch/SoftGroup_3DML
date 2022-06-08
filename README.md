@@ -21,7 +21,7 @@ We only redefine some of the details in MLP and Loss function. The number of MLP
 
 ## spconv, dependency installation and setup
 ```python
-pip install spconv-cu102
+pip install spconv-cu102 # we used cuda 11.3 version
 pip install -r requirements.txt
 sudo apt-get install libsparsehash-dev
 python setup.py build_ext develop
