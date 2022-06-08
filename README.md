@@ -2,7 +2,10 @@ SoftGroup_3DML
 ================
 # Dataset
 Considering remaining capacity of our desktop, we only utilize S3DIS Dataset.
-Already preprocessed (Downsampling)
+## Dataset preparation
+```python
+bash prepare_data.sh
+```
 
 # Implementation details
 We use all modules, pretrained HAIS checkpoint, bottom-up and top-down refinement codes from [author's codes](https://github.com/thangvubk/SoftGroup).
