@@ -36,5 +36,5 @@ python train.py --config configs/softgroup_s3dis_fold5.yaml --work_dir $WORK_DIR
 ## test
 
 ```python
-python test.py --config configs/softgroup_s3dis_fold5.yaml --work_dir 1 --out $RESULT --checkpoint $CHECKPOINT
+python test.py --config configs/softgroup_s3dis_fold5.yaml --out $RESULT --checkpoint $CHECKPOINT
 ```
