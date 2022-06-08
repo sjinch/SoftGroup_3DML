@@ -9,10 +9,10 @@ We use all modules, pretrained HAIS checkpoint, bottom-up and top-down refinemen
 We only redefine some of the details in MLP and Loss function. The number of MLP layers is defined as 2 but we figured out that it is quite shallow to learn point-wise semantic scores and offsets. Also we put more weights on semantic loss and offset loss which we believe has more significant impact on performance. 
 
 ## modification
-1. the number of MLP layers : 2 -> 3
+1. The number of MLP layers : 2 -> 3
 2. Activation function for MLP : ReLU -> LeakyReLU 
 3. Loss function : multi-task loss -> weighted multi-task loss
-
+4. Epochs : 20 -> 10
 # Usage
 
 ## spconv, dependency installation and setup
