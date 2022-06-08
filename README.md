@@ -4,7 +4,7 @@ SoftGroup_3DML
 Considering remaining capacity of our desktop, we only utilize S3DIS Dataset.
 ## Dataset preparation
 ```python
-bash prepare_data.sh
+bash prepare_data.sh # from author's code
 ```
 
 # Implementation details
@@ -30,12 +30,12 @@ python setup.py build_ext develop
 ## train
 ### fine-tuning backbone networks
 ```python
-python train.py --config configs/softgroup_s3dis_backbone_fold5.yaml --work_dir $WORK_DIR --skip_validate
-python train.py --config configs/softgroup_s3dis_fold5.yaml --work_dir $WORK_DIR --skip_validate
+python train.py --config configs/softgroup_s3dis_backbone_fold5.yaml --work_dir $WORK_DIR --skip_validate # from author's code
+python train.py --config configs/softgroup_s3dis_fold5.yaml --work_dir $WORK_DIR --skip_validate # from author's code
 ```
 
 ## test
 
 ```python
-python test.py --config configs/softgroup_s3dis_fold5.yaml --out $RESULT --checkpoint $CHECKPOINT
+python test.py --config configs/softgroup_s3dis_fold5.yaml --out $RESULT --checkpoint $CHECKPOINT # from author's code
 ```
