@@ -26,8 +26,8 @@ python setup.py build_ext develop
 ## train
 ### fine-tuning backbone networks
 ```python
-python train.py --config configs/softgroup_s3dis_backbone_fold5.yaml --work_dir 1 --skip_validate
-python train.py --config configs/softgroup_s3dis_fold5.yaml --work_dir 1 --skip_validate
+python train.py --config configs/softgroup_s3dis_backbone_fold5.yaml --work_dir $WORK_DIR --skip_validate
+python train.py --config configs/softgroup_s3dis_fold5.yaml --work_dir $WORK_DIR --skip_validate
 ```
 
 ## test
