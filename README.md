@@ -28,3 +28,7 @@ python setup.py build_ext develop
 ```python
 python train.py --config configs/softgroup_s3dis_backbone_fold5.yaml --work_dir 1 --skip_validate
 ```
+## test
+### frozen backbone
+```python
+python test.py --config configs/softgroup_s3dis_fold5.yaml --work_dir 1 --out $RESULT --checkpoint $CHECKPOINT
