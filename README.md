@@ -8,11 +8,12 @@ bash prepare_data.sh # from author's code
 ```
 
 # Implementation details
-We use all modules, config files, dataset preprocessing, train, test, bottom-up and top-down refinement codes from [author's codes](https://github.com/thangvubk/SoftGroup).
+We use all modules, config files, dataset preprocessing, train, test, evaluation, bottom-up and top-down refinement etc codes from [author's codes](https://github.com/thangvubk/SoftGroup).
 We use pretrained model from [HAIS checkpoint](https://github.com/hustvl/HAIS)
 We only redefine some of the details in MLP and Loss function. The number of MLP layers is defined as 2 but we figured out that it is quite shallow to learn point-wise semantic scores and offsets. Also we put more weights on semantic loss and offset loss which we believe has more significant impact on performance. 
 
 ## modifications that we perform
+THESE ARE THE ONLY MODIFICATIONS THAT WE PERFORM. OTHER THAN THIS, EVERYTHING IS FROM AUTHOR'S CODE
 1. The number of MLP layers : 2 -> 3 (we thought 2 is not enough to learn per-point features such as semantic scores and offset coordinates)
 2. Activation function for MLP : ReLU -> LeakyReLU (To prevent side effect stemmed from the increased layers)
 3. Loss function : multi-task loss -> weighted multi-task loss (details on the report)
